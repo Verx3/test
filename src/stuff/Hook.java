@@ -32,6 +32,10 @@ public class Hook {
     }
 
     public String getStd() {
-        return std;
+        String result = "You are clean";
+        if(getName().equalsIgnoreCase("Candy")){
+            result = "YOU GOT THEM ALL";
+        }
+        return result;
     }
 }
